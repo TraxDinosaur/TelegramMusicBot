@@ -1,3 +1,4 @@
+
 import re
 from os import getenv
 
@@ -7,30 +8,30 @@ from pyrogram import filters
 load_dotenv()
 
 # Get this value from my.telegram.org/apps
-API_ID = int(getenv("API_ID"))
-API_HASH = getenv("API_HASH")
+API_ID = int(getenv("API_ID", "Fill This"))
+API_HASH = getenv("API_HASH", "Fill This")
 
 # Get your token from @BotFather on Telegram.
-BOT_TOKEN = getenv("BOT_TOKEN")
+BOT_TOKEN = getenv("BOT_TOKEN", "Fill This")
 # -------------------------------------------------------
-OWNER_USERNAME = getenv("OWNER_USERNAME","iamakki001")
+OWNER_USERNAME = getenv("OWNER_USERNAME","TraxDinosaur")
 # --------------------------------------------------------
-BOT_USERNAME = getenv("BOT_USERNAME","odsmusicbot")
+BOT_USERNAME = getenv("BOT_USERNAME","")
 # --------------------------------------------------------
-BOT_NAME = getenv("BOT_NAME")
+BOT_NAME = getenv("BOT_NAME", "TraxDinosaur X Music☠️")
 # ---------------------------------------------------------
 
 
 # Get your mongo url from cloud.mongodb.com
-MONGO_DB_URI = getenv("MONGO_DB_URI", None)
+MONGO_DB_URI = getenv("MONGO_DB_URI", "Fill This")
 
 DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 17000))
 
 # Chat id of a group for logging bot's activities
-LOGGER_ID = int(getenv("LOGGER_ID", -1002311769574))
+LOGGER_ID = int(getenv("LOGGER_ID", -10000000000))
 
 # Get this value from @PURVI_HELP_BOT on Telegram by /id
-OWNER_ID = int(getenv("OWNER_ID", 5909658683))
+OWNER_ID = int(getenv("OWNER_ID", 000000))
 
 
 # make your bots privacy from telegra.ph and put your url here 
@@ -51,8 +52,8 @@ GIT_TOKEN = getenv(
     "GIT_TOKEN", None
 )  # Fill this variable if your upstream repository is private
 
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/iamvillain77")
-SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/oldskoolgc")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/AccioTraxDinosaur")
+SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/AccioTraxDinosaur")
 
 # Set this to True if you want the assistant to automatically leave chats after an interval
 AUTO_LEAVING_ASSISTANT = bool(getenv("AUTO_LEAVING_ASSISTANT", False))
@@ -74,7 +75,7 @@ TG_VIDEO_FILESIZE_LIMIT = int(getenv("TG_VIDEO_FILESIZE_LIMIT", 1073741824))
 
 
 # Get your pyrogram v2 session from @StringFatherBot on Telegram
-STRING1 = getenv("STRING_SESSION", None)
+STRING1 = getenv("STRING_SESSION", "BQFwyZ4ATP05JOBUyoELlrWyIUeYLC1BI_dtOWj51vU7DgekyusH5HUDlTlcWqgxWQkM6U8PM4wptXMME-RE3JVFt_cUtQAj5xV-NHm4DLgw8SPGFE7zEP3ZmOeoWi3Rz_ARDbixLMmth3l9RKoHTue7JMdEt5hSHS9XTDkKOsaGKeYfio82c72_NP6lwK8sZOajuDYWS-JzMrO9sY4XUSauy4qSUacNriNk7GLMhGBpxqV4HFkWfy4t2ONeD3zPWtYgvL4sYSfa0PZLPLeWtyImDX0ybiT2zA__qBSlufKq9H4c9KdnhF9sO8wOIbhMvY11uM-66Zld4nuwnq8VzMScikKX7AAAAAHgX78GAQ")
 STRING2 = getenv("STRING_SESSION2", None)
 STRING3 = getenv("STRING_SESSION3", None)
 STRING4 = getenv("STRING_SESSION4", None)
